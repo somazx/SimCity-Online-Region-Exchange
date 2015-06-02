@@ -1,0 +1,119 @@
+Key: [-] todo; [o] done
+
+Todo General:
+=============
+
+o add default admin user to setup sql
+o first user inserted will have id 0 - which may cause problems
+o registration page
+- may be able to use date/time stamp as unique id on city file - for such uses and varifying uploaded city file is the original
+- use transit images
+- consider going to jpg since it will work better in IE  (won't it?)
+- some sort of region image feedback mechanism so people know which city they're highlighting
+- better borders around cities on region map so users know where to click
+o Zipping of uploads/downloads - complete region download
+- support for zipped uploads
+- Need to go to templating of any HTML being done in php now
+o Login had html being outputted then does a redirect
+o deal with expiring registrations which aren't confirmed with a login
+o make login form data secure (sc_REQUEST)
+o make registration form data secure (sc_REQUEST)
+- make all GET/POST id's use sc_REQUEST
+- make admin form use sc_REQUEST
+o Improve admin region import to compare against the database not the Images dir
+- make email contain url to populate the login form for convenience
+- show file size beside download links (time estimate?)
+o possible option for players to turn off zipped files
+- add confirmation popup to resign
+o tab order with register link on login page
+o going directly to region url somehow bypasses check on valid user session
+o regions zip download not working
+o ie image tile js not working when in conjunction with the dom js
+
+
+
+**- credits page
+
+
+Todo Game Features:
+===================
+o city checkout by request only
+o fixed time limited checkouts
+- inactivity based checkouts
+- game limited by simcity version
+- add showing of game options to main view
+- option to disallow resign of cities?
+
+
+Admin Todos:
+============
+	System Wide
+	o public registrations
+	o use zip?
+	o Image path
+	o Region path
+	 
+
+	Region/Game Settings
+	o full region downloads
+	o city/point limit option
+	o city checkout by request only
+	o time limited checkouts on/off
+		o time limited checkout time limit
+	o game limited by simcity version
+
+	- assign a city to a user
+	- resign a user from a city
+	o list showing pending city term requests w/deny & accept
+	
+
+
+Setup Notes:
+============
+- increase post_max_size to at least 10MB - 20 recommended
+- increase upload_max_filesize to at least 10MB - 20 recommended (set same as post_max_size)
+- increase max memory to 20mb
+- need to set (and possibly uncomment) SMTP = your ips's mail server and sendmail_from = your account with your provider
+
+
+To Test:
+========
+- entering invalid values for all forms
+o does SCORE handle regions with empty spots in the bitmap file
+
+
+
+Idea for Browser Input Validator:
+=================================
+- you have basic data types:
+  - FILE
+  - TEXT
+  - ID
+
+- all forms use array's for name="" which specify type. 
+  for example: <input type="text" name="sf[TEXT][login]">
+
+- then in score.php a generic class looks in $_REQUEST for a
+  score_form ($_REQUEST['sf']) and loads it, then validates each set of value
+  types accordingly
+
+- ids are checked for being numeric; text fields have addslashes called, file names have basename() called
+
+You can still reference the original values in $_REQUEST['sf'] if you need unvalidated, raw values.
+And you can opt not to use the SCORE forms validator by simply not naming your html form data: sf[type]
+
+
+
+Permisisions Ideas:
+======
+-	permissions 0-200. each 'function' is assigned a min permission value
+	anyone over that value can access that function.
+	
+	
+	
+FAQ:
+====
+
+Q:How do I edit the end-user agreement on the registration page?
+
+A:open the file html_inc/register_inc.php and edit as you desire.

@@ -1,0 +1,234 @@
+	/*	
+		SimCity Online Region Exchange CSS
+	
+		COLORS
+		#4B572D
+		#A68A68
+		#4A5D8D 	light blue
+		#4F5835 	dark olive green
+	*/
+
+	
+
+	a {
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		font-size: 10px;
+		color: #4F5835;
+		text-decoration: none;
+	}
+
+	a:hover {
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		font-size: 10px;
+		color: #4A5D8D;
+		text-decoration: underline;
+	}
+
+
+	.dark_bg-link
+	{
+		color: #FFFFFF;
+	}
+
+	.dark_bg-link:hover
+	{
+		color: #FFFFFF;
+		text-decoration: underline;
+	}
+
+	body {
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		margin: 1%;
+		padding: 0px;
+		font-size: 10px;
+		text-align: center;
+		vertical-align: middle;
+		border: 1px solid gray;
+		height: auto;
+		background-color: white;
+	}
+
+	img {
+		border: none;
+	}
+
+	iframe
+	{
+		margin: 5px 5px 5px 0px;
+		border: 1px solid black;
+	}
+
+
+	input, textarea, select, table td {
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		font-size: 10px;
+	}
+
+
+	.login_form
+	{
+		font-family: sans-serif; font-size: 10px;
+		border-bottom: thin solid grey;
+		border-right: thin solid grey;
+		width: 300px;
+		background-image: url("background.png");
+	}
+
+	#function_header
+	{
+		text-align: left;
+		height: 15px;
+		padding-left: 5px;
+	}
+
+
+	.background_color1
+	{
+		background-color: #4F5835;
+		color: #EEEEEE;
+	}
+
+	.background_color2 
+	{
+		background-color: #4A5D8D;
+		color: #EEEEEE;
+	}
+
+	.background_image
+	{
+		background-image: url("background.png");
+	}
+
+	.title_text /* commonly used on region name */
+	{
+		font-size: 11px;
+		font-weight: bold;
+	}
+
+
+	.title_text a {
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		color: #4F5835;
+		text-decoration: none;
+		font-size: 11px;
+		font-weight: bold;
+	}
+
+	.title_text a:hover {
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		color: #4A5D8D;
+		text-decoration: underline;
+		font-size: 11px;
+		font-weight: bold;
+	}
+
+	
+	.warn_text /* errors and user-function feedback */
+	{
+		color: maroon;
+		text-align: left;
+		font-size: 12px;
+		font-weight: bold;
+	}
+
+	/*
+	**	Column headers
+	*/
+	.column_header
+	{
+		/*margin: 0px 2px 0px 2px;*/
+		text-align: center;
+		padding: 1px;
+	}
+	
+	.column_content
+	{
+		margin: 0px 2px 0px 2px;
+		text-align: left;
+		padding: 2px;
+	}
+
+
+	/*
+	** generic style for making two column layouts
+	*/
+	.ldiv {float: left;}
+	.rdiv {text-align: right;}
+
+	/*
+	** main page layout
+	*/
+	.main_table
+	{
+		width:100%;
+		border: none;
+		padding: 0px;
+		margin: 0px;
+		height: 100%;
+	}
+
+	.main_left_column
+	{
+		height: 100%;
+		border-right: 1px solid gray;
+		vertical-align: top;
+		width: 60%;
+		text-align: left;
+	}
+
+	.main_right_column
+	{
+		height: 100%;
+		vertical-align: top;
+		width: 40%;
+		text-align: left;
+	}
+
+
+
+	/* user stats (such as City-Points)*/
+	.user_statusbar
+	{
+		border: 1px solid black;
+		background-color: white;
+		width: 345px;
+		text-align: left;
+		margin: 5px;
+	}
+
+	.whos_playing
+	{
+			border: 1px solid black;
+			background-color: white;
+			width: 345px;
+			text-align: left;
+			margin: 5px;
+	}
+
+	#updated_cities
+	{
+			border: 1px solid black;
+			background-color: white;
+			width: 345px;
+			text-align: left;
+			margin: 5px;
+	}
+
+	/*
+	**	City View Div's
+	*/
+
+	.city_info_box
+	{
+		border: 1px solid black;
+		text-align: center;
+		background-color: white;
+		width: 345px;
+		text-align: left;
+		margin: 5px;
+	}
+
+	#main{
+		width:100%;
+		height:100%;
+	}
