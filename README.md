@@ -3,8 +3,7 @@ LAMP web application for hosting multiplayer SimCity 4 regions.
 
 Migrated from SourceForge for historical purposes.
 
-![Proof of Age]
-(/proof.png?raw=true "Proof of age.")
+![Proof of Age](/proof.png?raw=true "Proof of age.")
 
 ## Original README
 
